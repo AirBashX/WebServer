@@ -2,22 +2,26 @@ package Servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-public class Test02HTTPServlet extends HttpServlet{
-
-	private static final long serialVersionUID = -6611086270624707266L;
-
+/**
+ * 通过get方法接收信息,并发送到html文件上
+ * @author ZSP
+ *
+ */
+public class Test03GetMessage extends HttpServlet{
+	
+	private static final long serialVersionUID = 2239865831077865552L;
+	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		Date date = new Date();
-		String string = date.toString();
-		PrintWriter pw = resp.getWriter();
-		pw.write(string);
-	}	
+		resp.setContentType("utf8");
+		String parameter = req.getParameter("message");
+		PrintWriter writer = resp.getWriter();
+		writer.write(parameter);
+	}
+	
 }
