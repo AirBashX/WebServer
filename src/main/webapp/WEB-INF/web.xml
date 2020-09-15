@@ -64,12 +64,20 @@
 		<url-pattern>/deleteCookie</url-pattern>
 	</servlet-mapping>	
 	<servlet>
-		<servlet-name>Session</servlet-name>
-		<servlet-class>Servlet.Cache.Test03Session</servlet-class>
+		<servlet-name>AddSession</servlet-name>
+		<servlet-class>Servlet.Cache.Test03AddSession</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Session</servlet-name>
-		<url-pattern>/session</url-pattern>
+		<servlet-name>AddSession</servlet-name>
+		<url-pattern>/addSession</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteSession</servlet-name>
+		<servlet-class>Servlet.Cache.Test04DeleteSession</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteSession</servlet-name>
+		<url-pattern>/deleteSession</url-pattern>
 	</servlet-mapping>
 	
 	
