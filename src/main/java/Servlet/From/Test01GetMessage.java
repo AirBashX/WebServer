@@ -1,4 +1,4 @@
-package Servlet;
+package Servlet.From;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author ZSP
  *
  */
-public class Test03GetMessage extends HttpServlet{
+public class Test01GetMessage extends HttpServlet{
 	
 	private static final long serialVersionUID = 2239865831077865552L;
 	

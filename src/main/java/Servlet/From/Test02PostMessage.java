@@ -1,4 +1,4 @@
-package Servlet;
+package Servlet.From;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class Test04PostMessage extends HttpServlet{
+public class Test02PostMessage extends HttpServlet{
 
 	private static final long serialVersionUID = -1146803916908089921L;
 

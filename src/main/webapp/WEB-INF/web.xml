@@ -15,16 +15,15 @@
 
 	<servlet>
 		<servlet-name>Servlet1</servlet-name>
-		<servlet-class>Servlet.Test01Servlet</servlet-class>
+		<servlet-class>Servlet.Base.Test01Servlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Servlet1</servlet-name>
 		<url-pattern>/servlet1</url-pattern>
 	</servlet-mapping>
-
 	<servlet>
 		<servlet-name>HTTPServlet</servlet-name>
-		<servlet-class>Servlet.Test02HTTPServlet</servlet-class>
+		<servlet-class>Servlet.Base.Test02HTTPServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>HTTPServlet</servlet-name>
@@ -33,16 +32,15 @@
 
 	<servlet>
 		<servlet-name>GetSet</servlet-name>
-		<servlet-class>Servlet.Test03GetMessage</servlet-class>
+		<servlet-class>Servlet.From.Test01GetMessage</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>GetSet</servlet-name>
 		<url-pattern>/get</url-pattern>
 	</servlet-mapping>
-
 	<servlet>
 		<servlet-name>Post</servlet-name>
-		<servlet-class>Servlet.Test04PostMessage</servlet-class>
+		<servlet-class>Servlet.From.Test02PostMessage</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Post</servlet-name>
@@ -50,12 +48,32 @@
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>Cookie</servlet-name>
-		<servlet-class>Servlet.Test05Cookie</servlet-class>
+		<servlet-name>AddCookie</servlet-name>
+		<servlet-class>Servlet.Cache.Test01AddCookie</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Cookie</servlet-name>
-		<url-pattern>/cookie</url-pattern>
+		<servlet-name>AddCookie</servlet-name>
+		<url-pattern>/addCookie</url-pattern>
 	</servlet-mapping>
-
+	<servlet>
+		<servlet-name>DeleteCookie</servlet-name>
+		<servlet-class>Servlet.Cache.Test02DeleteCookie</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteCookie</servlet-name>
+		<url-pattern>/deleteCookie</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>Session</servlet-name>
+		<servlet-class>Servlet.Cache.Test03Session</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Session</servlet-name>
+		<url-pattern>/session</url-pattern>
+	</servlet-mapping>
+	
+	
+	<session-config>
+		<session-timeout>15</session-timeout>
+	</session-config>
 </web-app>
