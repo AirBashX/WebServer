@@ -24,7 +24,7 @@ public class Test01Servlet implements Servlet{
 	@Override
 	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
 		PrintWriter writer = res.getWriter();
-		writer.write("hello world!");
+		writer.write("Servlet!");
 	}
 
 	@Override

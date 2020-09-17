@@ -1,4 +1,4 @@
-package Servlet.Cache;
+package Servlet.Cache.Cookie;
 
 import java.io.IOException;
 import java.io.PrintWriter;

@@ -12,7 +12,7 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
-
+	<!-- servlet -->
 	<servlet>
 		<servlet-name>Servlet1</servlet-name>
 		<servlet-class>Servlet.Base.Test01Servlet</servlet-class>
@@ -49,7 +49,7 @@
 	
 	<servlet>
 		<servlet-name>AddCookie</servlet-name>
-		<servlet-class>Servlet.Cache.Test01AddCookie</servlet-class>
+		<servlet-class>Servlet.Cache.Cookie.Test01AddCookie</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AddCookie</servlet-name>
@@ -57,7 +57,7 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>DeleteCookie</servlet-name>
-		<servlet-class>Servlet.Cache.Test02DeleteCookie</servlet-class>
+		<servlet-class>Servlet.Cache.Cookie.Test02DeleteCookie</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>DeleteCookie</servlet-name>
@@ -65,7 +65,7 @@
 	</servlet-mapping>	
 	<servlet>
 		<servlet-name>AddSession</servlet-name>
-		<servlet-class>Servlet.Cache.Test03AddSession</servlet-class>
+		<servlet-class>Servlet.Cache.Session.Test01AddSession</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AddSession</servlet-name>
@@ -73,13 +73,50 @@
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>DeleteSession</servlet-name>
-		<servlet-class>Servlet.Cache.Test04DeleteSession</servlet-class>
+		<servlet-class>Servlet.Cache.Session.Test02DeleteSession</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>DeleteSession</servlet-name>
 		<url-pattern>/deleteSession</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteAllSession</servlet-name>
+		<servlet-class>Servlet.Cache.Session.Test03DeleteAllSession</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteAllSession</servlet-name>
+		<url-pattern>/deleteAllSession</url-pattern>
+	</servlet-mapping>
 	
+	<!-- Filter -->
+	<filter>
+		<filter-name>Filter1</filter-name>
+		<filter-class>Servlet.Filter.Test01Filter1</filter-class>
+	</filter>
+	<filter>
+		<filter-name>Filter2</filter-name>
+		<filter-class>Servlet.Filter.Test02Filter2</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Filter2</filter-name>
+		<url-pattern>/filter</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>Filter1</filter-name>
+		<url-pattern>/filter</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>FilterLife</filter-name>
+		<filter-class>Servlet.Filter.Test03FilterLife</filter-class>
+		<init-param>
+			<param-name>life</param-name>
+			<param-value>Filterlifer</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>FilterLife</filter-name>
+		<url-pattern>/filterLife</url-pattern>
+	</filter-mapping>
 	
 	<session-config>
 		<session-timeout>15</session-timeout>
