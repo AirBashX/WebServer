@@ -2,6 +2,7 @@ package Servlet.Cache.ServletContext;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Enumeration;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -20,7 +21,7 @@ public class Test01ServletContext extends HttpServlet{
 		PrintWriter writer = resp.getWriter();
 		ServletContext sc1 = req.getServletContext();
 		ServletContext sc2 = getServletContext();
-		
+
 		//获取的是同一个对象
 		System.out.println("sc1和sc2是否为同一个对象:"+(sc1==sc2));
 		
