@@ -29,6 +29,18 @@
 		<servlet-name>HTTPServlet</servlet-name>
 		<url-pattern>/servlet2</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>InitConfig</servlet-name>
+		<servlet-class>Servlet.Base.ServletConfig.Test01InitConfig</servlet-class>
+		<init-param>
+			<param-name>name</param-name>
+			<param-value>value1</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InitConfig</servlet-name>
+		<url-pattern>/initConfig</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>GetSet</servlet-name>
@@ -46,7 +58,7 @@
 		<servlet-name>Post</servlet-name>
 		<url-pattern>/post</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>AddCookie</servlet-name>
 		<servlet-class>Servlet.Cache.Cookie.Test01AddCookie</servlet-class>
@@ -62,7 +74,7 @@
 	<servlet-mapping>
 		<servlet-name>DeleteCookie</servlet-name>
 		<url-pattern>/deleteCookie</url-pattern>
-	</servlet-mapping>	
+	</servlet-mapping>
 	<servlet>
 		<servlet-name>AddSession</servlet-name>
 		<servlet-class>Servlet.Cache.Session.Test01AddSession</servlet-class>
@@ -87,7 +99,28 @@
 		<servlet-name>DeleteAllSession</servlet-name>
 		<url-pattern>/deleteAllSession</url-pattern>
 	</servlet-mapping>
-	
+	<servlet>
+		<servlet-name>ServletContext</servlet-name>
+		<servlet-class>Servlet.Cache.ServletContext.Test01ServletContext</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletContext</servlet-name>
+		<url-pattern>/servletContext</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>InitContext</servlet-name>
+		<servlet-class>Servlet.Cache.ServletContext.Test02InitContext</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InitContext</servlet-name>
+		<url-pattern>/initContext</url-pattern>
+	</servlet-mapping>
+	<context-param>
+		<param-name>name</param-name>
+		<param-value>value2</param-value>
+	</context-param>
+
+
 	<!-- Filter -->
 	<filter>
 		<filter-name>Filter1</filter-name>
@@ -117,8 +150,10 @@
 		<filter-name>FilterLife</filter-name>
 		<url-pattern>/filterLife</url-pattern>
 	</filter-mapping>
-	
+
+	<!-- session设置 -->
 	<session-config>
 		<session-timeout>15</session-timeout>
 	</session-config>
+
 </web-app>
