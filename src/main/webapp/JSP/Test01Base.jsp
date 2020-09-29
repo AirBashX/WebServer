@@ -7,9 +7,11 @@
 <title>JSP基础语法</title>
 </head>
 <body>
-	<% out.write("<%"); %>
-	<% out.print("<%");%>
-	<%= "<%=" %>
+	<% out.write("<%:"); %><br />
+	<% out.write("<%:out.write"); %><br />
+	<% out.print("<%:out.print"); %><br />
+	<% out.println("<%:out.println"); %><br />
 	
+	<%= "<%=" %><br />
 </body>
 </html>

@@ -17,97 +17,37 @@
 	</properties>
 
 	<dependencies>
-<!-- 		<dependency>
-			<groupId>de.codecentric</groupId>
-			<artifactId>spring-boot-admin-starter-client</artifactId>
-			<version>2.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>de.codecentric</groupId>
-			<artifactId>spring-boot-admin-server</artifactId>
-			<version>2.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>de.codecentric</groupId>
-			<artifactId>spring-boot-admin-server-ui</artifactId>
-			<version>2.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-			<version>2.0.2.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-			<version>2.0.2.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-			<version>2.0.2.RELEASE</version>
-		</dependency>
-		<dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-tomcat</artifactId> 
-			<version>2.0.2.RELEASE</version> </dependency>
-		<dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter</artifactId> 
-			<version>2.0.2.RELEASE</version> </dependency>
-
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-			<version>2.0.0.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-			<version>2.0.0.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-			<version>2.0.0.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
-			<version>2.0.0.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-zipkin</artifactId>
-			<version>2.0.0.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-openfeign</artifactId>
-			<version>2.0.0.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-			<version>2.0.0.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
-			<version>2.0.0.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-server</artifactId>
-			<version>2.0.0.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-client</artifactId>
-			<version>2.0.0.RELEASE</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>de.codecentric</groupId> <artifactId>spring-boot-admin-starter-client</artifactId> 
+			<version>2.0.1</version> </dependency> <dependency> <groupId>de.codecentric</groupId> 
+			<artifactId>spring-boot-admin-server</artifactId> <version>2.0.1</version> 
+			</dependency> <dependency> <groupId>de.codecentric</groupId> <artifactId>spring-boot-admin-server-ui</artifactId> 
+			<version>2.0.1</version> </dependency> <dependency> <groupId>org.springframework.boot</groupId> 
+			<artifactId>spring-boot-starter-actuator</artifactId> <version>2.0.2.RELEASE</version> 
+			</dependency> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-security</artifactId> 
+			<version>2.0.2.RELEASE</version> </dependency> <dependency> <groupId>org.springframework.boot</groupId> 
+			<artifactId>spring-boot-starter-web</artifactId> <version>2.0.2.RELEASE</version> 
+			</dependency> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-tomcat</artifactId> 
+			<version>2.0.2.RELEASE</version> </dependency> <dependency> <groupId>org.springframework.boot</groupId> 
+			<artifactId>spring-boot-starter</artifactId> <version>2.0.2.RELEASE</version> 
+			</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId> 
+			<version>2.0.0.RELEASE</version> </dependency> <dependency> <groupId>org.springframework.cloud</groupId> 
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId> <version>2.0.0.RELEASE</version> 
+			</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-netflix-hystrix</artifactId> 
+			<version>2.0.0.RELEASE</version> </dependency> <dependency> <groupId>org.springframework.cloud</groupId> 
+			<artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId> <version>2.0.0.RELEASE</version> 
+			</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-zipkin</artifactId> 
+			<version>2.0.0.RELEASE</version> </dependency> <dependency> <groupId>org.springframework.cloud</groupId> 
+			<artifactId>spring-cloud-starter-openfeign</artifactId> <version>2.0.0.RELEASE</version> 
+			</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-netflix-zuul</artifactId> 
+			<version>2.0.0.RELEASE</version> </dependency> <dependency> <groupId>org.springframework.cloud</groupId> 
+			<artifactId>spring-cloud-starter-config</artifactId> <version>2.0.0.RELEASE</version> 
+			</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-config-server</artifactId> 
+			<version>2.0.0.RELEASE</version> </dependency> <dependency> <groupId>org.springframework.cloud</groupId> 
+			<artifactId>spring-cloud-config-client</artifactId> <version>2.0.0.RELEASE</version> 
+			</dependency> -->
 		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-security -->
-<!-- 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-security</artifactId>
-			<version>2.0.0.RELEASE</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-security</artifactId> 
+			<version>2.0.0.RELEASE</version> </dependency> -->
 
 		<!-- <dependency> <groupId>org.jolokia</groupId> <artifactId>jolokia-core</artifactId> 
 			<version>1.5.0</version> </dependency> -->
@@ -115,9 +55,14 @@
 			<version>2.0.0.RELEASE</version> </dependency> -->
 
 		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>4.13</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -137,30 +82,11 @@
 	</distributionManagement>
 
 	<!-- 代理 -->
-<!-- 	<repositories>
-		<repository>
-			<id>nexus</id>
-			<name>Nexus Repository</name>
-			<url>http://192.168.111.144:8081/repository/maven-releases/</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</repository>
-	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>nexus</id>
-			<name>Nexus Plugin Repository</name>
-			<url>http://192.168.111.144:8081/repository/maven-snapshots/</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</pluginRepository>
-	</pluginRepositories> -->
+	<!-- <repositories> <repository> <id>nexus</id> <name>Nexus Repository</name> 
+		<url>http://192.168.111.144:8081/repository/maven-releases/</url> <snapshots> 
+		<enabled>true</enabled> </snapshots> <releases> <enabled>true</enabled> </releases> 
+		</repository> </repositories> <pluginRepositories> <pluginRepository> <id>nexus</id> 
+		<name>Nexus Plugin Repository</name> <url>http://192.168.111.144:8081/repository/maven-snapshots/</url> 
+		<snapshots> <enabled>true</enabled> </snapshots> <releases> <enabled>true</enabled> 
+		</releases> </pluginRepository> </pluginRepositories> -->
 </project>

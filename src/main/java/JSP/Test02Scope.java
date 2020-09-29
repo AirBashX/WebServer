@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 测试el表达式获取内容的顺序
+ * 测试el表达式获取内容的顺序:小的先输出
  */
 public class Test02Scope extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -18,7 +18,7 @@ public class Test02Scope extends HttpServlet {
 		getServletContext().setAttribute("name", "application");
 		request.getSession().setAttribute("name", "session");
 		request.setAttribute("name", "request");
-		RequestDispatcher rd = request.getRequestDispatcher("/JSP/Scope.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/JSP/Test02Scope.jsp");
 		rd.forward(request, response);
 	}
 }

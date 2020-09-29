@@ -7,7 +7,8 @@
 <title>JSP四大域</title>
 </head>
 <body>
-	${name}<br />
+	${name}<br /><!-- 查看获取的优先级 -->
+	
 	${applicationScope.name}<br />
 	<%= application.getAttribute("name") %><br />
 	<%= session.getAttribute("name") %><br />
