@@ -8,12 +8,19 @@
 <title>JSTL:if</title>
 </head>
 <body>
-通过get方法传入`name`的值,进行判断name是否等于1<br />
-	<c:if test="${param.name==1}">
-		true
+1.通过get方法传入`name`的值,进行判断name是否等于null<br />
+	<c:if test="${param.name!=null}">
+		name!=null
+	</c:if><br />
+	<c:if test="${param.name==null}">
+		name=null
 	</c:if>
-	<c:if test="${param.name!=1}">
-		false
+2.通过get方法传入`name`的值,将判断结果赋值给name
+	<c:if test="${param.name==null}" var="name" scope="page"><br />
+		${name}
+	</c:if>
+	<c:if test="${name}">
+		${name}
 	</c:if>
 </body>
 </html>
